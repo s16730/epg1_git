@@ -1,0 +1,11 @@
+$ git clone git@github.com:squadack/epg1_git.git # nie zauważyłem wcześniej żeklonuję złe repo, przed pushem dodatkowo wykonałem git remote set-url origin git@github.com:s16730/epg1_git.git
+$ cd epg1_git/
+$ git checkout -b hw-s16730
+$ git rebase hw-s16730 origin/rebase-me
+$ git checkout -b temp
+$ git checkout hw-s16730
+$ git merge --ff-only temp
+$ git merge origin/merge-me
+$ git add .
+$ git commit
+$ git branch -D temp
